@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Pokemon Price Checker",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-cp",
+                "lib/sqlite-jdbc-3.51.2.0.jar",
+                "-d",
+                "out",
+                "src/*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}

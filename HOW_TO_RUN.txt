@@ -1,0 +1,51 @@
+POKEMON CARD PRICE CHECKER - HOW TO RUN IN VS CODE
+==================================================
+
+1. Unzip this folder anywhere on your computer.
+
+2. Open Visual Studio Code.
+
+3. Go to File > Open Folder...
+
+4. Select the "pokemon-price-checker" folder (the one that contains src, lib, and sql).
+
+5. When VS Code asks to install extensions, click "Install" for:
+   - Extension Pack for Java (by Microsoft)
+
+6. Wait a few seconds for Java to finish loading (watch the bottom-right status bar).
+
+7. Press F5 on your keyboard
+   OR click Run > Start Debugging
+   OR open the Run and Debug panel (Ctrl+Shift+D / Cmd+Shift+D) and choose
+      "Run Pokemon Price Checker", then click the green play button.
+
+8. Use the TERMINAL panel at the bottom to type your menu choices and card searches.
+
+   When you search for a card (option 1), the app first checks the local database.
+   If nothing matches, it automatically searches PriceCharting.com online and saves
+   the results. You need an internet connection for the first search of a new card.
+
+   Search (option 1) displays card prices only — it does not save anything.
+   To save cards you own, use option 2 (My Collection) > Add a card.
+   Your collection is stored in cards.db and persists when you close and reopen the app.
+
+TROUBLESHOOTING
+---------------
+- "Could not find project folder" -> Make sure you opened the pokemon-price-checker
+  folder itself, not a parent folder.
+
+- "Java not found" -> Install Java from https://adoptium.net/ (choose JDK 17 or newer),
+  then restart VS Code.
+
+- Menu input not working -> Make sure you are typing in the Terminal tab, not Debug Console.
+
+- Search returns "No cards found" -> Check your internet connection. The app fetches
+  new cards from PriceCharting.com the first time you search for them.
+
+WITHOUT VS CODE
+---------------
+- Mac/Linux: double-click run.sh or run it from Terminal
+- Windows: double-click run.bat
+
+Everything needed is included (Java source, SQLite library, sample card data).
+No internet connection required to run the app.

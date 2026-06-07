@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Pokemon Price Checker",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "pokemon-price-checker",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "vmArgs": "--enable-native-access=ALL-UNNAMED"
+        }
+    ]
+}
